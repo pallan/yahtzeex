@@ -1,0 +1,51 @@
+{
+    IBClasses = (
+        {CLASS = DieValuesCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ScoresCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {
+            ACTIONS = {configureGame = id; doneConfiguring = id; }; 
+            CLASS = YahtzeePrefs; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {configureSheet = id; mainWindow = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                clearHighScores = id; 
+                closeHighScoresSheet = id; 
+                closePrefsSheet = id; 
+                lockDice = id; 
+                newGame = id; 
+                openHighScoresSheet = id; 
+                openPrefsSheet = id; 
+                resetGame = id; 
+                rollDice = id; 
+                setClickedFieldInBottom = id; 
+                setClickedFieldInTop = id; 
+                undo = id; 
+            }; 
+            CLASS = yahtzeeController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomMatrix = id; 
+                clickLocksSwitch = id; 
+                diceMatrix = id; 
+                highScoresMatrix = id; 
+                highScoresSheet = id; 
+                mainWindow = id; 
+                playerField = id; 
+                playerInputField = id; 
+                prefsSheet = id; 
+                rollButton = id; 
+                showHintsSwitch = id; 
+                topMatrix = id; 
+                topTotalMatrix = id; 
+                totalScoreField = id; 
+                zeroWarningSwitch = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
