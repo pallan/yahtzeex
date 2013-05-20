@@ -79,7 +79,7 @@ static float RandFloat(void)
 ********************************* */
 - (void)awakeFromNib {
 
-        int		i;
+        int		i, j;
         NSBundle	*programBundle = [NSBundle bundleForClass:[self class]];
         NSArray		*imageFiles;
 
@@ -119,7 +119,28 @@ static float RandFloat(void)
         for (i=0; i < 5; i++) {
             [[diceMatrix cellAtRow:i column:0] setImagePosition:NSImageOnly];
         }
-    
+    /*    
+        for (j=1; j <  3; j++) {
+            for (i=0; i < [topMatrix numberOfRows]; i++) {
+                [[topMatrix cellAtRow:i column:j] setTitle:kEmptyString];
+                [[topMatrix cellAtRow:i column:j] setBordered:NO];
+                [[topMatrix cellAtRow:i column:j] setEnabled:NO];
+                [[topMatrix cellAtRow:i column:j] setCellAttribute:NSCellHighlighted to:NO];
+            }
+            for (i=0; i < [bottomMatrix numberOfRows]; i++) {
+                [[bottomMatrix cellAtRow:i column:j] setTitle:kEmptyString];
+                [[bottomMatrix cellAtRow:i column:j] setBordered:NO];
+                [[bottomMatrix cellAtRow:i column:j] setEnabled:NO];
+                [[bottomMatrix cellAtRow:i column:j] setCellAttribute:NSCellHighlighted to:NO];
+            }
+             for (i=0; i < [topTotalMatrix numberOfRows]; i++) {
+                [[topTotalMatrix cellAtRow:i column:j] setTitle:kEmptyString];
+                [[topTotalMatrix cellAtRow:i column:j] setBordered:NO];
+                [[topTotalMatrix cellAtRow:i column:j] setEnabled:NO];
+                [[topTotalMatrix cellAtRow:i column:j] setCellAttribute:NSCellHighlighted to:NO];
+            }
+        }
+        */
         [self newGame:nil];
     
 }
